@@ -3,147 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Leal - Portfolio Profesional</title>
+    <title>Portfolio - Felipe Leal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="glass-effect shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-gradient">Felipe Leal</h1>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#inicio" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium">Inicio</a>
-                        <a href="#sobre-mi" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium">Sobre mí</a>
-                        <a href="#experiencia" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium">Experiencia</a>
-                        <a href="#proyectos" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium">Proyectos</a>
-                        <a href="#habilidades" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium">Habilidades</a>
-                        <a href="#contacto" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium">Contacto</a>
-                    </div>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-red-600 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu md:hidden fixed top-16 right-0 w-64 h-full bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#inicio" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Inicio</a>
-                <a href="#sobre-mi" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Sobre mí</a>
-                <a href="#experiencia" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Experiencia</a>
-                <a href="#proyectos" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Proyectos</a>
-                <a href="#habilidades" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Habilidades</a>
-                <a href="#contacto" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Contacto</a>
-            </div>
-        </div>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- Hero Section -->
-    <section id="inicio" class="gradient-bg min-h-screen flex items-center justify-center text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="floating-element absolute top-20 left-10 text-6xl">💻</div>
-            <div class="floating-element absolute top-40 right-20 text-4xl" style="animation-delay: -2s;">⚡</div>
-            <div class="floating-element absolute bottom-40 left-20 text-5xl" style="animation-delay: -4s;">🚀</div>
-        </div>
-        
-        <div class="max-w-4xl mx-auto px-4 text-center animate-fade-in relative z-10">
-            <div class="mb-8">
-                <div class="w-36 h-36 mx-auto mb-8 bg-white rounded-full flex items-center justify-center shadow-2xl floating-element">
-                    <i class="fas fa-code text-5xl text-red-600"></i>
+    <!-- HERO SECTION -->
+    <section class="gradient-bg text-white py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center hero-animation">
+            <div class="mb-6">
+                <div class="w-32 h-32 bg-slate-900 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg border-2 border-emerald-400">
+                    <i class="fas fa-terminal text-4xl text-emerald-400"></i>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">Felipe Leal</h1>
-                <h2 class="text-2xl md:text-3xl font-light mb-4">Estudiante de Ingeniería Informática</h2>
-                <p class="text-lg md:text-xl mb-2 opacity-90">Universidad Blas Pascal • Córdoba, Argentina</p>
-                <p class="text-xl md:text-2xl mb-8 opacity-95">Técnico en Informática con experiencia práctica</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#proyectos" class="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-flex items-center justify-center">
-                        <i class="fas fa-rocket mr-2"></i>
-                        Ver Proyectos
-                    </a>
-                    <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition duration-300 inline-flex items-center justify-center">
-                        <i class="fas fa-envelope mr-2"></i>
-                        Contactar
-                    </a>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">FELIPE LEAL</h1>
+            <div class="text-xl md:text-2xl mb-8 typing-animation inline-block pr-2">
+                Estudiante de Ingeniería Informática | Desarrollador Web Jr. | Data Analyst Jr.
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="mailto:felileal25@gmail.com" class="contact-btn bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-emerald-600">
+                    <i class="fas fa-envelope mr-2"></i>Contactar
+                </a>
+                <a href="https://feli-leal.vercel.app/" target="_blank" class="contact-btn border-2 border-emerald-400 text-emerald-400 px-6 py-3 rounded-full font-semibold hover:bg-emerald-400 hover:text-slate-900">
+                    <i class="fas fa-globe mr-2"></i>Ver Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase mb-12 text-center section-title">CONTACTO</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-slate-50 hover:bg-emerald-50 transition-colors">
+                    <i class="fas fa-map-marker-alt text-3xl text-emerald-600 mb-4"></i>
+                    <h3 class="font-semibold text-slate-900 mb-2">Ubicación</h3>
+                    <p class="text-slate-600">Córdoba, Argentina</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-slate-50 hover:bg-emerald-50 transition-colors">
+                    <i class="fas fa-phone text-3xl text-emerald-600 mb-4"></i>
+                    <h3 class="font-semibold text-slate-900 mb-2">Teléfono</h3>
+                    <p class="text-slate-600">+54 358 401 0796</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-slate-50 hover:bg-emerald-50 transition-colors">
+                    <i class="fas fa-envelope text-3xl text-emerald-600 mb-4"></i>
+                    <h3 class="font-semibold text-slate-900 mb-2">Email</h3>
+                    <p class="text-slate-600">felileal25@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex justify-center gap-6 mt-12">
+                <a href="https://www.linkedin.com/in/felipe-leal-588192218/" target="_blank" class="text-emerald-600 hover:text-emerald-800 text-2xl transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ffelileal" target="_blank" class="text-slate-700 hover:text-slate-900 text-2xl transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://feli-leal.vercel.app/" target="_blank" class="text-emerald-600 hover:text-emerald-800 text-2xl transition-colors">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFIL PROFESIONAL -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase mb-12 section-title">PERFIL PROFESIONAL</h2>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Estudiante de Ingeniería Informática y Técnico en Programación (2024). Experiencia en React, Node.js y Power BI, con proyectos académicos y pasantía en AGD. Busco aportar en desarrollo frontend o análisis de datos aplicando buenas prácticas y soluciones escalables.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES TÉCNICAS -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase mb-12 text-center section-title">HABILIDADES TÉCNICAS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="skill-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl text-emerald-600 mr-3"></i>
+                        <h3 class="font-bold text-slate-900">FRONTEND</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• HTML5</li>
+                        <li>• CSS3</li>
+                        <li>• JavaScript (ES6+)</li>
+                        <li>• React</li>
+                        <li>• Tailwind</li>
+                    </ul>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server text-2xl text-slate-600 mr-3"></i>
+                        <h3 class="font-bold text-slate-900">BACKEND</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• Node.js</li>
+                        <li>• PHP (básico)</li>
+                        <li>• REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database text-2xl text-orange-600 mr-3"></i>
+                        <h3 class="font-bold text-slate-900">BASES DE DATOS</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• SQL Server</li>
+                    </ul>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-purple-600 mr-3"></i>
+                        <h3 class="font-bold text-slate-900">DATA ANALYSIS</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• Power BI</li>
+                        <li>• Dashboards</li>
+                        <li>• KPI</li>
+                        <li>• DAX</li>
+                    </ul>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-terminal text-2xl text-slate-600 mr-3"></i>
+                        <h3 class="font-bold text-slate-900">HERRAMIENTAS</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• Git</li>
+                        <li>• GitHub</li>
+                        <li>• VSCode</li>
+                        <li>• Copilot/ChatGPT</li>
+                    </ul>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-globe text-2xl text-emerald-600 mr-3"></i>
+                        <h3 class="font-bold text-slate-900">IDIOMAS</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• Inglés técnico (intermedio)</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="sobre-mi" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Sobre mí</h2>
-                <div class="w-24 h-1 bg-red-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 h-80 flex items-center justify-center">
-                        <div class="text-center">
-                            <i class="fas fa-user-graduate text-8xl text-red-600 mb-4"></i>
-                            <p class="text-red-800 font-semibold">Técnico en Informática</p>
-                            <p class="text-red-600">Egresado 2024</p>
-                        </div>
+    <!-- EXPERIENCIA PROFESIONAL -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase mb-12 text-center section-title">EXPERIENCIA PROFESIONAL</h2>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-6 mt-1">
+                        <i class="fas fa-briefcase text-emerald-600"></i>
                     </div>
-                </div>
-                
-                <div class="space-y-6">
-                    <h3 class="text-3xl font-semibold text-gray-800">¡Hola! Soy Felipe 👋</h3>
-                    <p class="text-gray-600 text-lg leading-relaxed">
-                        Tengo 20 años y soy de Córdoba, Argentina. Soy Técnico en Informática egresado del Instituto 
-                        Adrián P. Urquía y actualmente estudio Ingeniería Informática en la Universidad Blas Pascal.
-                    </p>
-                    
-                    <p class="text-gray-600 text-lg leading-relaxed">
-                        Me apasiona el desarrollo web, el análisis de datos y la creación de soluciones tecnológicas. 
-                        Tengo experiencia práctica tanto en proyectos académicos como profesionales, incluyendo una 
-                        pasantía en Aceitera General Deheza donde desarrollé scripts de automatización.
-                    </p>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <i class="fas fa-graduation-cap text-red-600 mb-2"></i>
-                            <h4 class="font-semibold text-red-800">Educación</h4>
-                            <p class="text-red-700 text-sm">Técnico + Universitario</p>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Aceitera General Deheza</h3>
+                                <p class="text-emerald-600 font-semibold">Pasantía</p>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">2024</span>
                         </div>
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <i class="fas fa-briefcase text-red-600 mb-2"></i>
-                            <h4 class="font-semibold text-red-800">Experiencia</h4>
-                            <p class="text-red-700 text-sm">Pasantía profesional</p>
-                        </div>
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <i class="fas fa-code text-red-600 mb-2"></i>
-                            <h4 class="font-semibold text-red-800">Especialidad</h4>
-                            <p class="text-red-700 text-sm">Frontend & Backend</p>
-                        </div>
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <i class="fas fa-chart-bar text-red-600 mb-2"></i>
-                            <h4 class="font-semibold text-red-800">Análisis</h4>
-                            <p class="text-red-700 text-sm">Power BI & SQL</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gradient-to-r from-red-50 to-red-100 p-6 rounded-lg border-l-4 border-red-600">
-                        <h4 class="font-semibold text-red-800 mb-2">🎯 Objetivos Actuales</h4>
-                        <ul class="text-red-700 space-y-1">
-                            <li>• Profundizar en desarrollo Frontend y Backend</li>
-                            <li>• Expandir conocimientos en Power BI y análisis de datos</li>
-                            <li>• Lanzar proyectos web personales innovadores</li>
-                            <li>• Contribuir en equipos de desarrollo profesional</li>
+                        <ul class="space-y-2 text-slate-700">
+                            <li>• Desarrollé scripts en JavaScript/Node.js para automatizar procesos internos</li>
+                            <li>• Implementé el Sistema de Guardias en producción, optimizando la gestión del área</li>
                         </ul>
                     </div>
                 </div>
@@ -151,516 +182,127 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experiencia" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Formación y Experiencia</h2>
-                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-                <p class="text-gray-600 text-lg">Mi trayectoria académica y profesional</p>
-            </div>
-            
-            <div class="space-y-8">
-                <!-- University -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-                        <div class="bg-red-100 p-4 rounded-full">
-                            <i class="fas fa-university text-3xl text-red-600"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Universidad Blas Pascal</h3>
-                            <h4 class="text-xl text-red-600 font-medium mb-2">Ingeniería Informática</h4>
-                            <p class="text-gray-600 mb-3">2025 - Presente • Córdoba, Argentina</p>
-                            <p class="text-gray-700">
-                                Cursando la carrera de Ingeniería Informática con enfoque en desarrollo de software, 
-                                bases de datos y sistemas de información.
-                            </p>
-                        </div>
-                        <div class="bg-green-100 px-4 py-2 rounded-full">
-                            <span class="text-green-800 font-semibold">En curso</span>
-                        </div>
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase mb-12 text-center section-title">PROYECTOS DESTACADOS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-emerald-600 mr-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Dashboard Académico</h3>
                     </div>
-                </div>
-                
-                <!-- Technical School -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-                        <div class="bg-blue-100 p-4 rounded-full">
-                            <i class="fas fa-school text-3xl text-blue-600"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Instituto Técnico Adrián P. Urquía</h3>
-                            <h4 class="text-xl text-blue-600 font-medium mb-2">Técnico en programación</h4>
-                            <p class="text-gray-600 mb-3">2018 - 2024 • Finalizado</p>
-                            <p class="text-gray-700 mb-4">
-                                Formación técnica integral en programación, redes, hardware y desarrollo de sistemas. 
-                                Proyecto final: sistema web completo con frontend, backend y base de datos.
-                            </p>
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h5 class="font-semibold text-blue-800 mb-2">🏆 Proyecto Final Destacado</h5>
-                                <p class="text-blue-700">Sistema web completo: Frontend (HTML/CSS), Backend (PHP), Base de datos (SQL Server)</p>
-                            </div>
-                        </div>
-                        <div class="bg-blue-100 px-4 py-2 rounded-full">
-                            <span class="text-blue-800 font-semibold">Completado</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Professional Experience -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-                        <div class="bg-green-100 p-4 rounded-full">
-                            <i class="fas fa-industry text-3xl text-green-600"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Aceitera General Deheza</h3>
-                            <h4 class="text-xl text-green-600 font-medium mb-2">Pasantía - Desarrollo de Automatización</h4>
-                            <p class="text-gray-600 mb-3">2024 • Córdoba, Argentina</p>
-                            <p class="text-gray-700 mb-4">
-                                Desarrollo de scripts con JavaScript y Node.js para automatización de tareas internas. 
-                                Experiencia práctica en entorno empresarial real, ademas de obtener conocimientos 
-                                sobre metolodías agiles y tradicionales.
-                            </p>
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h5 class="font-semibold text-green-800 mb-2">🛠️ Tecnologías Utilizadas</h5>
-                                    <ul class="text-green-700 text-sm space-y-1">
-                                        <li>• JavaScript</li>
-                                        <li>• Node.js</li>
-                                        <li>• Scripts de automatización</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h5 class="font-semibold text-green-800 mb-2">📈 Logros</h5>
-                                    <ul class="text-green-700 text-sm space-y-1">
-                                        <li>• Automatización de procesos</li>
-                                        <li>• Mejora de eficiencia</li>
-                                        <li>• Experiencia empresarial</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-green-100 px-4 py-2 rounded-full">
-                            <span class="text-green-800 font-semibold">Completada</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="proyectos" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Proyectos Destacados</h2>
-                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-                <p class="text-gray-600 text-lg">Una selección de mis trabajos más representativos</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card rounded-2xl p-6 card-hover">
-                    <div class="bg-red-100 rounded-lg p-4 mb-4 text-center">
-                        <i class="fas fa-record-vinyl text-3xl text-red-600"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Historia del Rock Argentino</h3>
-                    <p class="text-gray-600 mb-4">Sistema web dinámico para conocer un poco de la historia del rock nacional. Interfaz intuitiva y completamente responsive.</p>
+                    <p class="text-slate-600 mb-4">Sistema completo de gestión académica con interfaz moderna y base de datos robusta.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
-                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Responsive</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm">React</span>
+                        <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded text-sm">Node.js</span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">SQL Server</span>
                     </div>
-                    <a href="https://rock-argentino.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="block text-center w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition duration-300 font-semibold">
-                    <i class="fas fa-external-link-alt mr-2"></i>Ver Proyecto
-                </a>
-                
-            </div>
-            <!-- Project 2 -->
-                <div class="project-card rounded-2xl p-6 card-hover">
-                    <div class="bg-blue-100 rounded-lg p-4 mb-4 text-center">
-                        <i class="fas fa-table text-3xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Dashboard Académico</h3>
-                    <p class="text-gray-600 mb-4">Sistema de gestión académica con carga de materias, cálculo automático de promedio y seguimiento motivacional para estudiantes.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Responsive</span>
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Editable</span>
-                    </div>
-                    <a href="https://gest-academica.vercel.app/" target="_blank" rel="noopener noreferrer"
-                       class="block w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold text-center">
-                        <i class="fas fa-external-link-alt mr-2"></i>Ver Proyecto
+                    <a href="https://gest-academica.vercel.app/" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-semibold">
+                        Ver proyecto <i class="fas fa-external-link-alt ml-1"></i>
                     </a>
                 </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card rounded-2xl p-6 card-hover">
-                    <div class="bg-green-100 rounded-lg p-4 mb-4 text-center">
-                        <i class="fas fa-camera text-3xl text-green-600"></i>
+                <div class="project-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-music text-2xl text-purple-600 mr-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Historia del Rock</h3>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Web para subir fotografias de un casamiento </h3>
-                    <p class="text-gray-600 mb-4">    Plataforma web para que los invitados puedan subir y ver fotos del casamiento, con visualización ordenada, fácil navegación y diseño responsive.</p>
+                    <p class="text-slate-600 mb-4">Sitio web interactivo sobre la historia del rock argentino con diseño responsive.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Responsive</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">CSS</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">JavaScript</span>
                     </div>
-                    
-                    <a href="https://boda-ale-andre.vercel.app" target="_blank" rel="noopener noreferrer"
-                       class="block w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition duration-300 font-semibold text-center">
-                        <i class="fas fa-external-link-alt mr-2"></i>Ver Proyecto
+                    <a href="https://rock-argentino.vercel.app/" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-semibold">
+                        Ver proyecto <i class="fas fa-external-link-alt ml-1"></i>
                     </a>
                 </div>
-                
-                <!-- Project 4 -->
-                <div class="project-card rounded-2xl p-6 card-hover">
-                    <div class="bg-purple-100 rounded-lg p-4 mb-4 text-center">
-                        <i class="fas fa-chart-bar text-3xl text-purple-600"></i>
+                <div class="project-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-camera text-2xl text-pink-600 mr-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Web de Fotografías para Casamiento</h3>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Análisis Power BI</h3>
-                    <p class="text-gray-600 mb-4">Dashboards interactivos con análisis de para una vinoteca para ver cuantas degustaciones hubo en el mes y cuales vinos fueron los mas degustados</p>
+                    <p class="text-slate-600 mb-4">Galería elegante para evento especial con diseño personalizado y optimizado.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Power BI</span>
-                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">SQL</span>
-                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Analytics</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">CSS</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">JavaScript</span>
                     </div>
-                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition duration-300 font-semibold">
-                        <i class="fas fa-external-link-alt mr-2"></i>Ver Proyecto
-                    </button>
+                    <a href="https://boda-ale-andre.vercel.app/" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-semibold">
+                        Ver proyecto <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
                 </div>
-                
-                <!-- Project 5 -->
-                <div class="project-card rounded-2xl p-6 card-hover">
-                    <div class="bg-yellow-100 rounded-lg p-4 mb-4 text-center">
-                        <i class="fas fa-wine-glass text-3xl text-yellow-600"></i>
+                <div class="project-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code-branch text-2xl text-slate-600 mr-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Portfolio Personal</h3>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Web de Reservas</h3>
-                    <p class="text-gray-600 mb-4">Sistema web para reservas de degustaciones con calendario interactivo, gestión de usuarios y confirmaciones automáticas.</p>
+                    <p class="text-slate-600 mb-4">Portfolio completo con todos mis proyectos y habilidades técnicas.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Frontend</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Reservas</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Calendario</span>
+                        <span class="bg-slate-100 text-slate-800 px-2 py-1 rounded text-sm">Desarrollo Web</span>
                     </div>
-                    <button 
-                        class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition duration-300 font-semibold"
-                        onclick="document.getElementById('modal1').classList.remove('hidden')"
-                    >
-                        <i class="fas fa-external-link-alt mr-2"></i>Ver Proyecto
-                    </button>
-                    <div id="modal1" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                        <div class="bg-white p-6 rounded-xl w-11/12 max-w-lg relative">
-                            <button class="absolute top-2 right-2 text-gray-500" onclick="document.getElementById('modal1').classList.add('hidden')">&times;</button>
-                            <h3 class="text-xl font-semibold mb-4">Web de Reservas</h3>
-                            <p class="mb-4">PROXIAMENTE FOTOGRAFIAS DEL PRYECTO.</p>
-                            <img src="/assets/images/" alt="Captura del proyecto" class="rounded mb-4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6 -->
-                <div class="project-card rounded-2xl p-6 card-hover">
-                    <div class="bg-indigo-100 rounded-lg p-4 mb-4 text-center">
-                        <i class="fas fa-shield-alt text-3xl text-indigo-600"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Sistema de Guardias</h3>
-                    <p class="text-gray-600 mb-4">Web desarrollada durante pasantías para gestión de guardias y turnos. Automatización de procesos internos con JavaScript y Node.js.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Node.js</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Empresarial</span>
-                    </div>
-                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300 font-semibold">
-                        <i class="fas fa-external-link-alt mr-2"></i>Ver Proyecto
-                    </button>
+                    <a href="https://feli-leal.vercel.app/" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-semibold">
+                        Ver proyecto <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-                <!-- Skills Section -->
-                 <section id="habilidades" class="py-20 bg-gray-50">
-                    <div class="max-w-6xl mx-auto px-4">
-                        <div class="text-center mb-16">
-                            <h2 class="text-4xl font-bold text-gray-800 mb-4">Habilidades Técnicas</h2>
-                            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-                            <p class="text-gray-600 text-lg">Tecnologías y herramientas que domino</p>
+
+    <!-- FORMACIÓN ACADÉMICA -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase mb-12 text-center section-title">FORMACIÓN ACADÉMICA</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-6 mt-1">
+                            <i class="fas fa-graduation-cap text-emerald-600"></i>
                         </div>
-            
-                        <div class="grid md:grid-cols-2 gap-12">
-                            <!-- Frontend Skills -->
-                             <div class="bg-white rounded-2xl p-8 shadow-lg">
-                                <h3 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center">
-                                    <i class="fas fa-laptop-code text-red-600 mr-3"></i>
-                                    Desarrollo Frontend
-                                </h3>
-                                <div class="space-y-6">
-                                    <div class="skill-item">
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-gray-700 font-medium">HTML/CSS</span>
-                                            <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Avanzado</span></div>
-                                            <div class="bg-gray-200 rounded-full h-3">
-                                                <div class="skill-bar bg-red-600 h-3 rounded-full w-[95%]"></div>
-                                            </div>
-                                        </div>
-
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">JavaScript</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Avanzado</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-[90%]"></div>
-            </div>
-        </div>
-
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">React</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Intermedio</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-[85%]"></div>
-            </div>
-        </div>
-
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">Tailwind CSS</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Avanzado</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-[92%]"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-                
-                <!-- Backend & Data Skills -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center">
-        <i class="fas fa-database text-red-600 mr-3"></i>
-        Backend y Datos
-    </h3>
-    <div class="space-y-6">
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">SQL Server</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Avanzado</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-11/12"></div>
-            </div>
-        </div>
-
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">Power BI</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Avanzado</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-10/12"></div>
-            </div>
-        </div>
-
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">PHP</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Intermedio</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-4/5"></div>
-            </div>
-        </div>
-
-        <div class="skill-item">
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">Node.js</span>
-                <span class="text-sm bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full">Intermedio</span>
-            </div>
-            <div class="bg-gray-200 rounded-full h-3">
-                <div class="skill-bar bg-red-600 h-3 rounded-full w-3/4"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            
-            <!-- Soft Skills -->
-            <div class="mt-16">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Competencias Profesionales</h3>
-                <div class="grid md:grid-cols-4 gap-6">
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg card-hover">
-                        <i class="fas fa-users text-4xl text-red-600 mb-4"></i>
-                        <h4 class="font-semibold text-gray-800">Trabajo en Equipo</h4>
-                        <p class="text-gray-600 text-sm mt-2">Experiencia colaborativa</p>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Universidad Blas Pascal</h3>
+                                    <p class="text-slate-600">Ingeniería Informática (en curso)</p>
+                                </div>
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Desde 2025</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg card-hover">
-                        <i class="fas fa-lightbulb text-4xl text-red-600 mb-4"></i>
-                        <h4 class="font-semibold text-gray-800">Resolución de Problemas</h4>
-                        <p class="text-gray-600 text-sm mt-2">Pensamiento analítico</p>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg card-hover">
-                        <i class="fas fa-rocket text-4xl text-red-600 mb-4"></i>
-                        <h4 class="font-semibold text-gray-800">Proactividad</h4>
-                        <p class="text-gray-600 text-sm mt-2">Iniciativa personal</p>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg card-hover">
-                        <i class="fas fa-brain text-4xl text-red-600 mb-4"></i>
-                        <h4 class="font-semibold text-gray-800">Aprendizaje Continuo</h4>
-                        <p class="text-gray-600 text-sm mt-2">Actualización constante</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 mt-1">
+                            <i class="fas fa-certificate text-slate-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Instituto Técnico Adrián P. Urquía</h3>
+                                    <p class="text-slate-600">Técnico en Programación</p>
+                                </div>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">2024</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CV Download Section -->
-    <section class="py-16 gradient-bg">
-    <div class="max-w-4xl mx-auto px-4 text-center text-white">
-        <h2 class="text-3xl font-bold mb-4">¿Interesado en mi perfil profesional?</h2>
-        <p class="text-xl mb-8 opacity-90">Descargá mi CV completo en formato PDF</p>
-        <a href="/assets/pdf/Curriculum Vitae Felipe Leal.pdf Felipe.pdf" download
-   class="bg-white text-red-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300 inline-flex items-center shadow-lg focus:outline-none focus:ring-2 focus:ring-red-300">
-    <i class="fas fa-download mr-3"></i>
-    Descargar CV Completo
-</a>
-
-    </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contacto</h2>
-                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-                <p class="text-gray-600 text-lg">¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Información de Contacto</h3>
-                    
-                    <div class="flex items-center space-x-4">
-                        <div class="bg-red-100 p-4 rounded-full">
-                            <i class="fas fa-envelope text-red-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Email</h4>
-                            <p class="text-gray-600">felileal25@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center space-x-4">
-                        <div class="bg-red-100 p-4 rounded-full">
-                            <i class="fas fa-phone text-red-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Teléfono</h4>
-                            <p class="text-gray-600">+54 358 401 0796</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center space-x-4">
-                        <div class="bg-red-100 p-4 rounded-full">
-                            <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Ubicación</h4>
-                            <p class="text-gray-600">Córdoba, Argentina</p>
-                        </div>
-                    </div>
-                    
-                    <div class="pt-6">
-                        <h4 class="font-semibold text-gray-800 mb-4">Conecta conmigo:</h4>
-                        <div class="flex space-x-4">
-                            <a href="https://wa.me/5493584010796" target="_blank" class="bg-green-500 text-white p-4 rounded-full hover:bg-green-600 transition duration-300 shadow-lg">
-                                <i class="fab fa-whatsapp text-xl"></i>
-                            </a>
-                            <a href="https://github.com/ffelileal" class="bg-gray-800 text-white p-4 rounded-full hover:bg-gray-900 transition duration-300 shadow-lg">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/felipe-leal-588192218/" class="bg-blue-600 text-white p-4 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">
-                                <i class="fab fa-linkedin text-xl"></i>
-                            </a>
-                            <a href="https://www.instagram.com/ffeli.leal/" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-full hover:from-purple-600 hover:to-pink-600 transition duration-300 shadow-lg">
-                                <i class="fab fa-instagram text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Contact Form -->
-                <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Envíame un mensaje</h3>
-                    <form id="contact-form" class="space-y-6">
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Nombre completo</label>
-                            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-300" placeholder="Tu nombre completo">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-300" placeholder="tu@email.com">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Asunto</label>
-                            <select name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-300">
-                                <option value="Oportunidad laboral">Oportunidad laboral</option>
-                                <option value="Proyecto colaborativo">Proyecto colaborativo</option>
-                                <option value="Consulta técnica">Consulta técnica</option>
-                                <option value="Otro">Otro</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Mensaje</label>
-                            <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-300" placeholder="Cuéntame sobre tu proyecto o propuesta..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-red-600 text-white py-4 rounded-lg font-semibold hover:bg-red-700 transition duration-300 shadow-lg">
-                            <i class="fas fa-paper-plane mr-2"></i>Enviar Mensaje
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-gradient">Felipe Leal</h3>
-                    <p class="text-gray-400">Estudiante de Ingeniería Informática apasionado por el desarrollo web y la innovación tecnológica.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#sobre-mi" class="hover:text-white transition duration-300">Sobre mí</a></li>
-                        <li><a href="#proyectos" class="hover:text-white transition duration-300">Proyectos</a></li>
-                        <li><a href="#habilidades" class="hover:text-white transition duration-300">Habilidades</a></li>
-                        <li><a href="#contacto" class="hover:text-white transition duration-300">Contacto</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Contacto Directo</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>📧 felileal25@gmail.com</li>
-                        <li>📱 +54 358 401 0796</li>
-                        <li>📍 Córdoba, Argentina</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2025 Felipe Leal. Todos los derechos reservados.</p>
+    <!-- FOOTER -->
+    <footer class="gradient-bg text-white py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">¿Listo para trabajar juntos?</h3>
+            <p class="text-lg mb-8 opacity-90">Estoy disponible para nuevos proyectos y oportunidades</p>
+            <a href="mailto:felileal25@gmail.com" class="contact-btn bg-emerald-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-600 inline-block">
+                <i class="fas fa-envelope mr-2"></i>Contactar ahora
+            </a>
+            <div class="mt-8 pt-8 border-t border-emerald-400 opacity-75">
+                <p>&copy; 2024 Felipe Leal. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
